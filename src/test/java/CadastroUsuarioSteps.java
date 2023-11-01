@@ -6,7 +6,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class CadastroUsuarioSteps {
 
@@ -45,7 +44,7 @@ public class CadastroUsuarioSteps {
     }
     @When("enters nome de usuario, matricula e cargo")
     public void enters_nome_de_usuario_matricula_e_cargo() {
-        System.out.println("Inside Step - and");
+        System.out.println("Inside Step - when");
 
         driver.findElement(By.id("nome")).sendKeys("Nome Teste");
         driver.findElement(By.id("matricula")).sendKeys("111000111000");
@@ -56,8 +55,10 @@ public class CadastroUsuarioSteps {
     }
     @Then("press the button Salvar Cadastro")
     public void press_the_button_salvar_cadastro() {
-        System.out.println("Inside Step - and");
+        System.out.println("Inside Step - then");
 
         driver.findElement(By.id("enviar")).click();
+
+        driver.quit();
     }
 }
