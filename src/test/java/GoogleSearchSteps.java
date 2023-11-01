@@ -19,7 +19,11 @@ public class GoogleSearchSteps {
         String caminhoProjeto = System.getProperty("user.dir");
         System.out.println("Caminho do projeto é: "+caminhoProjeto);
 
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\Aluno\\Desktop\\ChamaMedBDD\\src\\test\\resources\\drivers\\msedgedriver.exe");
+        // Configuração Lubuntu Edge Dev versão 120.0.2172.1
+        System.setProperty("webdriver.edge.driver", "/home/marciobaldo/Arquivos Gerais/Márcio Baldo/Sistemas/Testes/ChamaMedBDD/src/test/resources/drivers/msedgedriver");
+
+        // Configuração Windows com Edge versão 116
+        // System.setProperty("webdriver.edge.driver", "C:\\Users\\Aluno\\Desktop\\ChamaMedBDD\\src\\test\\resources\\drivers\\msedgedriver.exe");
 
         driver = new EdgeDriver();
 
