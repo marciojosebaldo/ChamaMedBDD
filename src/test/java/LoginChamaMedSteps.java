@@ -2,13 +2,11 @@ import io.cucumber.java.en.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class LoginChamaMedSteps {
 
     WebDriver driver = null;
-    WebDriverWait wait = null;
 
     @Given("page login is open")
     public void page_login_is_open() {
